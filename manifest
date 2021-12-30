@@ -1,0 +1,8 @@
+: 1
+name: cryptopp
+version: 8.6.0-a.0.z
+summary: cryptopp C++ library
+license: other
+url: https://github.com/weidai11/cryptopp
+depends: * build2 >= 0.14.0
+depends: * bpkg >= 0.14.0

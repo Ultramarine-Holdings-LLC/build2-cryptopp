@@ -1,0 +1,1 @@
+./: {*/ -build/ -upstream/} manifest

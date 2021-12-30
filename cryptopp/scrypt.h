@@ -1,0 +1,1 @@
+../upstream/scrypt.h

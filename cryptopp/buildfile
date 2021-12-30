@@ -1,0 +1,430 @@
+lib{cryptopp}: \
+    hxx{3way} \
+    hxx{adler32} \
+    hxx{adv_simd} \
+    hxx{aes} \
+    hxx{aes_armv4} \
+    hxx{algebra} \
+    hxx{algparam} \
+    hxx{allocate} \
+    hxx{arc4} \
+    hxx{argnames} \
+    hxx{aria} \
+    hxx{arm_simd} \
+    hxx{asn} \
+    hxx{authenc} \
+    hxx{base32} \
+    hxx{base64} \
+    hxx{basecode} \
+    hxx{blake2} \
+    hxx{blowfish} \
+    hxx{blumshub} \
+    hxx{camellia} \
+    hxx{cast} \
+    hxx{cbcmac} \
+    hxx{ccm} \
+    hxx{chacha} \
+    hxx{chachapoly} \
+    hxx{cham} \
+    hxx{channels} \
+    hxx{cmac} \
+    hxx{config} \
+    hxx{config_align} \
+    hxx{config_asm} \
+    hxx{config_cpu} \
+    hxx{config_cxx} \
+    hxx{config_dll} \
+    hxx{config_int} \
+    hxx{config_misc} \
+    hxx{config_ns} \
+    hxx{config_os} \
+    hxx{config_ver} \
+    hxx{cpu} \
+    hxx{crc} \
+    hxx{cryptlib} \
+    hxx{darn} \
+    hxx{default} \
+    hxx{des} \
+    hxx{dh} \
+    hxx{dh2} \
+    hxx{dll} \
+    hxx{dmac} \
+    hxx{donna} \
+    hxx{donna_32} \
+    hxx{donna_64} \
+    hxx{donna_sse} \
+    hxx{drbg} \
+    hxx{dsa} \
+    hxx{eax} \
+    hxx{ec2n} \
+    hxx{eccrypto} \
+    hxx{ecp} \
+    hxx{ecpoint} \
+    hxx{elgamal} \
+    hxx{emsa2} \
+    hxx{eprecomp} \
+    hxx{esign} \
+    hxx{fhmqv} \
+    hxx{files} \
+    hxx{filters} \
+    hxx{fips140} \
+    hxx{fltrimpl} \
+    hxx{gcm} \
+    hxx{gf256} \
+    hxx{gf2_32} \
+    hxx{gf2n} \
+    hxx{gfpcrypt} \
+    hxx{gost} \
+    hxx{gzip} \
+    hxx{hashfwd} \
+    hxx{hc128} \
+    hxx{hc256} \
+    hxx{hex} \
+    hxx{hight} \
+    hxx{hkdf} \
+    hxx{hmac} \
+    hxx{hmqv} \
+    hxx{hrtimer} \
+    hxx{ida} \
+    hxx{idea} \
+    hxx{integer} \
+    hxx{iterhash} \
+    hxx{kalyna} \
+    hxx{keccak} \
+    hxx{lea} \
+    hxx{lsh} \
+    hxx{lubyrack} \
+    hxx{luc} \
+    hxx{mars} \
+    hxx{md2} \
+    hxx{md4} \
+    hxx{md5} \
+    hxx{mdc} \
+    hxx{mersenne} \
+    hxx{misc} \
+    hxx{modarith} \
+    hxx{modes} \
+    hxx{modexppc} \
+    hxx{mqueue} \
+    hxx{mqv} \
+    hxx{naclite} \
+    hxx{nbtheory} \
+    hxx{nr} \
+    hxx{oaep} \
+    hxx{oids} \
+    hxx{osrng} \
+    hxx{ossig} \
+    hxx{padlkrng} \
+    hxx{panama} \
+    hxx{pch} \
+    hxx{pkcspad} \
+    hxx{poly1305} \
+    hxx{polynomi} \
+    hxx{ppc_simd} \
+    hxx{pssr} \
+    hxx{pubkey} \
+    hxx{pwdbased} \
+    hxx{queue} \
+    hxx{rabbit} \
+    hxx{rabin} \
+    hxx{randpool} \
+    hxx{rc2} \
+    hxx{rc5} \
+    hxx{rc6} \
+    hxx{rdrand} \
+    hxx{rijndael} \
+    hxx{ripemd} \
+    hxx{rng} \
+    hxx{rsa} \
+    hxx{rw} \
+    hxx{safer} \
+    hxx{salsa} \
+    hxx{scrypt} \
+    hxx{seal} \
+    hxx{secblock} \
+    hxx{secblockfwd} \
+    hxx{seckey} \
+    hxx{seed} \
+    hxx{serpent} \
+    hxx{serpentp} \
+    hxx{sha} \
+    hxx{sha1_armv4} \
+    hxx{sha256_armv4} \
+    hxx{sha3} \
+    hxx{sha512_armv4} \
+    hxx{shacal2} \
+    hxx{shake} \
+    hxx{shark} \
+    hxx{simeck} \
+    hxx{simon} \
+    hxx{simple} \
+    hxx{siphash} \
+    hxx{skipjack} \
+    hxx{sm3} \
+    hxx{sm4} \
+    hxx{smartptr} \
+    hxx{sosemanuk} \
+    hxx{speck} \
+    hxx{square} \
+    hxx{stdcpp} \
+    hxx{strciphr} \
+    hxx{tea} \
+    hxx{threefish} \
+    hxx{tiger} \
+    hxx{trap} \
+    hxx{trunhash} \
+    hxx{ttmac} \
+    hxx{tweetnacl} \
+    hxx{twofish} \
+    hxx{vmac} \
+    hxx{wake} \
+    hxx{whrlpool} \
+    hxx{words} \
+    hxx{xed25519} \
+    hxx{xtr} \
+    hxx{xtrcrypt} \
+    hxx{xts} \
+    hxx{zdeflate} \
+    hxx{zinflate} \
+    hxx{zlib} \
+    cxx{cryptlib} \
+    cxx{cpu} \
+    cxx{integer} \
+    cxx{3way} \
+    cxx{adler32} \
+    cxx{algebra} \
+    cxx{algparam} \
+    cxx{allocate} \
+    cxx{arc4} \
+    cxx{aria} \
+    cxx{aria_simd} \
+    cxx{ariatab} \
+    cxx{asn} \
+    cxx{authenc} \
+    cxx{base32} \
+    cxx{base64} \
+    cxx{basecode} \
+    cxx{bfinit} \
+    cxx{blake2} \
+    cxx{blake2b_simd} \
+    cxx{blake2s_simd} \
+    cxx{blowfish} \
+    cxx{blumshub} \
+    cxx{camellia} \
+    cxx{cast} \
+    cxx{casts} \
+    cxx{cbcmac} \
+    cxx{ccm} \
+    cxx{chacha} \
+    cxx{chacha_avx} \
+    cxx{chacha_simd} \
+    cxx{chachapoly} \
+    cxx{cham} \
+    cxx{cham_simd} \
+    cxx{channels} \
+    cxx{cmac} \
+    cxx{crc} \
+    cxx{crc_simd} \
+    cxx{darn} \
+    cxx{default} \
+    cxx{des} \
+    cxx{dessp} \
+    cxx{dh} \
+    cxx{dh2} \
+    cxx{dll} \
+    cxx{donna_32} \
+    cxx{donna_64} \
+    cxx{donna_sse} \
+    cxx{dsa} \
+    cxx{eax} \
+    cxx{ec2n} \
+    cxx{eccrypto} \
+    cxx{ecp} \
+    cxx{elgamal} \
+    cxx{emsa2} \
+    cxx{eprecomp} \
+    cxx{esign} \
+    cxx{files} \
+    cxx{filters} \
+    cxx{fips140} \
+    cxx{fipstest} \
+    cxx{gcm} \
+    cxx{gcm_simd} \
+    cxx{gf256} \
+    cxx{gf2_32} \
+    cxx{gf2n} \
+    cxx{gf2n_simd} \
+    cxx{gfpcrypt} \
+    cxx{gost} \
+    cxx{gzip} \
+    cxx{hc128} \
+    cxx{hc256} \
+    cxx{hex} \
+    cxx{hight} \
+    cxx{hmac} \
+    cxx{hrtimer} \
+    cxx{ida} \
+    cxx{idea} \
+    cxx{iterhash} \
+    cxx{kalyna} \
+    cxx{kalynatab} \
+    cxx{keccak} \
+    cxx{keccak_core} \
+    cxx{keccak_simd} \
+    cxx{lea} \
+    cxx{lea_simd} \
+    cxx{lsh256} \
+    cxx{lsh256_avx} \
+    cxx{lsh256_sse} \
+    cxx{lsh512} \
+    cxx{lsh512_avx} \
+    cxx{lsh512_sse} \
+    cxx{luc} \
+    cxx{mars} \
+    cxx{marss} \
+    cxx{md2} \
+    cxx{md4} \
+    cxx{md5} \
+    cxx{misc} \
+    cxx{modes} \
+    cxx{mqueue} \
+    cxx{mqv} \
+    cxx{nbtheory} \
+    cxx{oaep} \
+    cxx{osrng} \
+    cxx{padlkrng} \
+    cxx{panama} \
+    cxx{pkcspad} \
+    cxx{poly1305} \
+    cxx{polynomi} \
+    cxx{pssr} \
+    cxx{pubkey} \
+    cxx{queue} \
+    cxx{rabbit} \
+    cxx{rabin} \
+    cxx{randpool} \
+    cxx{rc2} \
+    cxx{rc5} \
+    cxx{rc6} \
+    cxx{rdrand} \
+    cxx{rdtables} \
+    cxx{rijndael} \
+    cxx{rijndael_simd} \
+    cxx{ripemd} \
+    cxx{rng} \
+    cxx{rsa} \
+    cxx{rw} \
+    cxx{safer} \
+    cxx{salsa} \
+    cxx{scrypt} \
+    cxx{seal} \
+    cxx{seed} \
+    cxx{serpent} \
+    cxx{sha} \
+    cxx{sha3} \
+    cxx{sha_simd} \
+    cxx{shacal2} \
+    cxx{shacal2_simd} \
+    cxx{shake} \
+    cxx{shark} \
+    cxx{sharkbox} \
+    cxx{simeck} \
+    cxx{simon} \
+    cxx{simon128_simd} \
+    cxx{skipjack} \
+    cxx{sm3} \
+    cxx{sm4} \
+    cxx{sm4_simd} \
+    cxx{sosemanuk} \
+    cxx{speck} \
+    cxx{speck128_simd} \
+    cxx{square} \
+    cxx{squaretb} \
+    cxx{sse_simd} \
+    cxx{strciphr} \
+    cxx{tea} \
+    cxx{tftables} \
+    cxx{threefish} \
+    cxx{tiger} \
+    cxx{tigertab} \
+    cxx{ttmac} \
+    cxx{tweetnacl} \
+    cxx{twofish} \
+    cxx{vmac} \
+    cxx{wake} \
+    cxx{whrlpool} \
+    cxx{xed25519} \
+    cxx{xtr} \
+    cxx{xtrcrypt} \
+    cxx{xts} \
+    cxx{zdeflate} \
+    cxx{zinflate} \
+    cxx{zlib}
+
+cxx.poptions += "-I$src_root"
+
+if ($cxx.target.cpu == x86_64)
+{
+    if ($config.cryptopp.asm)
+    {
+        obj{sse_simd chacha_simd donna_sse}: cxx.coptions += "-msse2"
+    }
+    else
+        cxx.poptions += "-DCRYPTOPP_DISABLE_ASM"
+
+    if ($config.cryptopp.ssse3)
+    {
+        obj{aria_simd cham_simd keccak_simd lea_simd lsh256_sse lsh512_sse simon128_simd speck128_simd}: cxx.coptions += "-mssse3"
+        if ($config.cryptopp.sse4)
+        {
+            obj{blake2s_simd blake2b_simd}: cxx.coptions += "-msse4.1"
+            obj{crc_simd}: cxx.coptions += "-msse4.2"
+            if ($config.cryptopp.clmul)
+            {
+                obj{gcm_simd}: cxx.coptions += "-mssse3" "-mpclmul"
+                obj{gf2n_simd}: cxx.coptions += "-mpclmul"
+            }
+            else
+                cxx.poptions += "-DCRYPTOPP_DISABLE_CLMUL"
+
+            if ($config.cryptopp.aes)
+            {
+                obj{rijndael_simd}: cxx.coptions += "-msse4.1" "-maes"
+                obj{sm4_simd}: cxx.coptions += "-mssse3" "-maes"
+            }
+            else
+                cxx.poptions += "-DCRYPTOPP_DISABLE_AESNI"
+
+            if ($config.cryptopp.avx2)
+            {
+                obj{chacha_avx lsh256_avx lsh512_avx}: cxx.coptions += "-mavx2"
+            }
+            else
+                cxx.poptions += "-DCRYPTOPP_DISABLE_AVX2"
+
+            if ($config.cryptopp.sha)
+            {
+                obj{sha_simd shacal2_simd}: cxx.coptions += "-msse4.2" "-msha"
+            }
+            else
+                cxx.poptions += "-DCRYPTOPP_DISABLE_SHANI"
+        }
+        else
+            cxx.poptions += "-DCRYPTOPP_DISABLE_SSE4"
+    }
+    else
+        cxx.poptions += "-DCRYPTOPP_DISABLE_SSSE3"
+}
+else
+    error 'Unimplemented Build CPU'
+
+lib{cryptopp}:
+{
+  cxx.export.poptions = "-I$src_root"
+}
+
+{hxx}{*}:
+{
+  install         = include/cryptopp/
+  install.subdirs = true
+}

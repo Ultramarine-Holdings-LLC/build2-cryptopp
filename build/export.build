@@ -1,0 +1,6 @@
+$out_root/
+{
+  include cryptopp/
+}
+
+export $out_root/cryptopp/$import.target
