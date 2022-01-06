@@ -363,6 +363,22 @@ lib{cryptopp}: \
 
 cxx.poptions += "-I$src_root"
 
+switch $cxx.target.class, $cxx.target.system
+{
+    case 'linux'
+    {
+        cxx.libs =+ "-lpthread"
+    }
+    case 'windows', 'mingw32'
+    {
+        cxx.libs =+ "-lws2_32"
+    }
+    case 'windows'
+    {
+        cxx.libs =+ "ws2_32.lib"
+    }
+}
+
 if ($cxx.target.cpu == x86_64)
 {
     if ($config.cryptopp.asm)
@@ -423,7 +439,7 @@ lib{cryptopp}:
   cxx.export.poptions = "-I$src_root"
 }
 
-{hxx}{*}:
+hxx{*}:
 {
   install         = include/cryptopp/
   install.subdirs = true
