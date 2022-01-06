@@ -1,8 +1,11 @@
 : 1
 name: cryptopp
 version: 8.6.0-a.0.z
-summary: cryptopp C++ library
+summary: free C++ class library of cryptographic schemes
 license: other
-url: https://github.com/weidai11/cryptopp
+url: https://cryptopp.com
+src-url: https://github.com/weidai11/cryptopp
+doc-url: https://www.cryptopp.com/wiki/Main_Page
+description-file: upstream/Readme.txt
 depends: * build2 >= 0.14.0
 depends: * bpkg >= 0.14.0
