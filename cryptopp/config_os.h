@@ -32,6 +32,7 @@
 #if (defined(_MSC_VER) && defined(__clang__) && \
    !(defined( __clang_analyzer__)) && !defined(__INTEL_LLVM_COMPILER))
 //# error: "Unsupported configuration"
+#define CRYPTOPP_DISABLE_UNCAUGHT_EXCEPTION
 #endif
 
 // Windows platform
