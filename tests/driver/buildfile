@@ -1,0 +1,3 @@
+import libs = cryptopp%lib{cryptopp}
+
+exe{driver}: cxx{*} $libs
