@@ -5,8 +5,6 @@ using cxx
 hxx{*}: extension = h
 cxx{*}: extension = cpp
 
-src_upstream = $src_root/upstream
-
 config [bool] config.cryptopp.asm ?= true
 config [bool] config.cryptopp.ssse3 ?= true
 config [bool] config.cryptopp.sse4 ?= true

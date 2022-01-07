@@ -361,6 +361,18 @@ lib{cryptopp}: \
     cxx{zinflate} \
     cxx{zlib}
 
+ml = $directory($effect($cxx.path))/ml64.exe
+lib{cryptopp}: obj{rdrand-asm rdseed x64dll x64masm}: include = ($cxx.target.system == 'win32-msvc')
+
+for file: rdrand-asm rdseed x64dll x64masm
+{
+    obj{$file}: file{{$file}.asm} $ml
+    {{
+        diag masm64 $>
+        $ml /D _M_X64 /c $path($<) /Fo $path($>)
+    }}
+}
+
 cxx.poptions += "-I$src_root"
 
 switch $cxx.target.class, $cxx.target.system
