@@ -1,6 +1,6 @@
 : 1
 name: cryptopp
-version: 8.6.0-a.0.z
+version: 8.6.0
 summary: free C++ class library of cryptographic schemes
 license: other
 url: https://cryptopp.com
