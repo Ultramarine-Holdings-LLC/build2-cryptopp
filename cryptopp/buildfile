@@ -362,11 +362,17 @@ lib{cryptopp}: \
     cxx{zlib}
 
 ml = $directory($effect($cxx.path))/ml64.exe
-lib{cryptopp}: obj{rdrand-asm rdseed x64dll x64masm}: include = ($cxx.target.system == 'win32-msvc')
+liba{cryptopp}: obja{rdrand-asm rdseed x64dll x64masm}: include = ($cxx.target.system == 'win32-msvc')
+libs{cryptopp}: objs{rdrand-asm rdseed x64dll x64masm}: include = ($cxx.target.system == 'win32-msvc')
 
 for file: rdrand-asm.asm rdseed.asm x64dll.asm x64masm.asm
 {
-    obj{$name($file)}: file{$file} $ml
+    obja{$name($file)}: file{$file} $ml
+    {{
+        diag masm64 $>
+        $ml /D _M_X64 /c $path($<) /Fo $path($>)
+    }}
+    objs{$name($file)}: file{$file} $ml
     {{
         diag masm64 $>
         $ml /D _M_X64 /c $path($<) /Fo $path($>)
