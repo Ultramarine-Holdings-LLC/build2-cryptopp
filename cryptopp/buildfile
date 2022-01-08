@@ -370,12 +370,12 @@ for file: rdrand-asm.asm rdseed.asm x64dll.asm x64masm.asm
     obja{$name($file).obj}: file{$file} $ml
     {{
         diag masm64 $>
-        $ml /D _M_X64 /c $path($<) /Fo $path($>)
+        $ml /D _M_X64 /c $path($<[0]) /Fo $path($>)
     }}
     objs{$name($file).obj}: file{$file} $ml
     {{
         diag masm64 $>
-        $ml /D _M_X64 /c $path($<) /Fo $path($>)
+        $ml /D _M_X64 /c $path($<[0]) /Fo $path($>)
     }}
 }
 
