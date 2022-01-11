@@ -464,10 +464,30 @@ if ($cxx.target.cpu == x86_64)
 else
     error 'Unimplemented Build CPU'
 
-lib{cryptopp}:
+if($cxx.target.class == 'windows')
 {
-  cxx.export.poptions = "-I$src_root"
+    # FIXME: This does not work (the flags do not appear in the generated command)
+    # libs{cryptopp}:
+    # {
+    #     cxx.poptions += -DCRYPTOPP_EXPORTS
+    #     cxx.export.poptions += -DCRYPTOPP_IMPORTS
+    # }
+
+    # FIXME: this does not work either (the flags do not appear in the generated command)
+    # libs{cryptopp}: cxx.poptions += -DCRYPTOPP_EXPORTS
+    # libs{cryptopp}: cxx.export.poptions += -DCRYPTOPP_IMPORTS
+
+    # FIXME: then this work, but only because we use the shared library in the tests by default, it will not work if we use the static library.
+    cxx.poptions += -DCRYPTOPP_EXPORTS
+    libs{cryptopp}: cxx.export.poptions += -DCRYPTOPP_IMPORTS
 }
+
+# FIXME: this does not work: tests command does not have this flag set, not sure why.
+#   lib{cryptopp}: cxx.export.poptions += "-I$src_root"
+# Workaround:
+liba{cryptopp}: cxx.export.poptions += "-I$src_root"
+libs{cryptopp}: cxx.export.poptions += "-I$src_root"
+
 
 hxx{*}:
 {
