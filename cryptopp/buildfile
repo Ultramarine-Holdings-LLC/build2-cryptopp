@@ -373,17 +373,21 @@ asm_include_dirs = $regex.merge($cxx.sys_hdr_dirs, "", "", ";")
 
 for file: rdrand-asm.asm rdseed.asm x64dll.asm x64masm.asm
 {
+    # NOTE: keep the output path flag (/Fo) before the source file path flag (/c)!
+    # extract from `ml64` doc: https://docs.microsoft.com/en-us/cpp/assembler/masm/ml-and-ml64-command-line-reference?view=msvc-170#remarks
+    #    Some command-line options to ML and ML64 are placement-sensitive.
+    #    For example, because ML and ML64 can accept several /c options, any corresponding /Fo options must be specified before /c.
     obja{"$name($file).lib.obj"}: file{$file} $ml
     {{
         diag masm64 $>
         export INCLUDE="$asm_include_dirs"
-        $ml /D _M_X64 /c $path($<[0]) /Fo $path($>)
+        $ml /D _M_X64 /Fo $path($>) /c $path($<[0])
     }}
     objs{"$name($file).dll.obj"}: file{$file} $ml
     {{
         diag masm64 $>
         export INCLUDE="$asm_include_dirs"
-        $ml /D _M_X64 /c $path($<[0]) /Fo $path($>)
+        $ml /D _M_X64 /Fo $path($>) /c $path($<[0])
     }}
 }
 
