@@ -365,19 +365,24 @@ lib{cryptopp}: \
     cxx{pem_read pem_write}
 
 ml = $directory($effect($cxx.path))/ml64.exe
-liba{cryptopp}: obja{rdrand-asm.obj rdseed.obj x64dll.obj x64masm.obj}: include = ($cxx.target.system == 'win32-msvc')
-libs{cryptopp}: objs{rdrand-asm.obj rdseed.obj x64dll.obj x64masm.obj}: include = ($cxx.target.system == 'win32-msvc')
+
+liba{cryptopp}: obja{rdrand-asm.lib.obj rdseed.lib.obj x64dll.lib.obj x64masm.lib.obj}: include = ($cxx.target.system == 'win32-msvc')
+libs{cryptopp}: objs{rdrand-asm.dll.obj rdseed.dll.obj x64dll.dll.obj x64masm.dll.obj}: include = ($cxx.target.system == 'win32-msvc')
+
+asm_include_dirs = $regex.merge($cxx.sys_hdr_dirs, "", "", ";")
 
 for file: rdrand-asm.asm rdseed.asm x64dll.asm x64masm.asm
 {
-    obja{$name($file).obj}: file{$file} $ml
+    obja{"$name($file).lib.obj"}: file{$file} $ml
     {{
         diag masm64 $>
+        export INCLUDE="$asm_include_dirs"
         $ml /D _M_X64 /c $path($<[0]) /Fo $path($>)
     }}
-    objs{$name($file).obj}: file{$file} $ml
+    objs{"$name($file).dll.obj"}: file{$file} $ml
     {{
         diag masm64 $>
+        export INCLUDE="$asm_include_dirs"
         $ml /D _M_X64 /c $path($<[0]) /Fo $path($>)
     }}
 }
