@@ -359,7 +359,10 @@ lib{cryptopp}: \
     cxx{xts} \
     cxx{zdeflate} \
     cxx{zinflate} \
-    cxx{zlib}
+    cxx{zlib} \
+    hxx{pem} \
+    {hxx cxx}{pem_common x509cert} \
+    cxx{pem_read pem_write}
 
 ml = $directory($effect($cxx.path))/ml64.exe
 liba{cryptopp}: obja{rdrand-asm.obj rdseed.obj x64dll.obj x64masm.obj}: include = ($cxx.target.system == 'win32-msvc')
