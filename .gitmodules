@@ -1,3 +1,6 @@
 [submodule "upstream"]
 	path = upstream
 	url = https://github.com/weidai11/cryptopp
+[submodule "upstream-pem"]
+	path = upstream-pem
+	url = https://github.com/noloader/cryptopp-pem
