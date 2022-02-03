@@ -1,0 +1,5 @@
+: 1
+name: cryptopp
+version: 8.6.0+8
+summary: free C++ class library of cryptographic schemes
+license: other
