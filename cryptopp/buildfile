@@ -372,12 +372,6 @@ lib{cryptopp}:
     cxx.export.poptions += "-I$src_root"
 }
 
-if($cxx.target.class == 'windows')
-{
-    libs{cryptopp}: cxx.export.poptions += -DCRYPTOPP_IMPORTS
-    objs{*}: cxx.poptions += -DCRYPTOPP_EXPORTS
-}
-
 liba{cryptopp}: obja{rdrand-asm.lib.obj rdseed.lib.obj x64dll.lib.obj x64masm.lib.obj}: include = ($cxx.target.system == 'win32-msvc')
 libs{cryptopp}: objs{rdrand-asm.dll.obj rdseed.dll.obj x64dll.dll.obj x64masm.dll.obj}: include = ($cxx.target.system == 'win32-msvc')
 
