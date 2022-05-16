@@ -1,3 +1,7 @@
+#if defined(CRYPTOPP_IS_DLL)
+# include <cryptopp/dll.h> // See upstream readme.txt
+#endif
+
 #include <cryptopp/sha.h>
 
 int main() {
